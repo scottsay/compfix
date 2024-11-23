@@ -1,0 +1,175 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:url('../pcc.png');
+}
+
+/* Global */
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+.button_1{
+    height:38px;
+    background:orangered;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:navy;
+}
+
+.dark{
+    padding:0;
+    background-color:#ffffff;
+    color:#000000;
+margin: 10px;
+margin-bottom:1px;
+width: 1000px;
+text-align: left;
+}
+
+/* Header **/
+header{
+    background:navy;
+    color: #ffffff;
+    padding: top 30px;
+    min-height: 70px;
+    border-bottom: rgb(255, 178, 91);
+}
+
+header a{
+    color:#ffffff;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+
+header .highlight, header .current a{
+    color: rgb(252, 168, 72);
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+    min-height:400px;
+    background:url('../HP_ProBook_450_G9_1240.jpg');
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    color:rgb(252, 177, 72);
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* boxes */
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: center;
+    text-align: center;
+    width: 95%;
+    padding: 20px;
+    border: rgb(252, 177, 72) solid 1.5px;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+/* sidebar */
+aside#sidebar{
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input
+aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+/* Main-col */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+/* Services */
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border:rgb(252, 177, 72) solid  2px;
+    margin-bottom: 5px;
+    background:rgb(255, 254, 253);
+    text-align: center;
+}
+
+footer{ 
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #2c2d2d;
+    text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+
+    }
+}
